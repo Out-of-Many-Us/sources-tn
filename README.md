@@ -1,4 +1,4 @@
-# outofmany-sources-tn
+# sources-tn
 
 Original county election result documents from Tennessee, kept exactly as the counties published them, with original filenames preserved.
 
