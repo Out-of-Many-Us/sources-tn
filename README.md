@@ -6,7 +6,7 @@ Tennessee's Secretary of State publishes statewide and federal results. County c
 
 ## What is here
 
-**148 documents from 36 of Tennessee's 95 counties, plus 3 feed captures from 3 more.** `manifest.csv` lists every one with its
+**382 documents from 78 of Tennessee's 95 counties, plus 4 feed captures from 4 more.** `manifest.csv` lists every one with its
 source URL, the date it was retrieved, and a SHA-256 you can check against the file.
 
 Files are organised by **election**, because that is what people come here looking for:
@@ -84,18 +84,18 @@ prevent. The `flags` column records what each filename said.
 
 This repository's value is that you can check it, so you should know what we could not read.
 
-**48 of the 148 documents are scans with no embedded text layer.** Of those, most were read by
-OCR. **11 of the 148 yield no text by any means**, native or OCR, and every one of those carries
+**109 of the 382 documents are scans with no embedded text layer.** Of those, most were read by
+OCR. **11 of the 382 yield no text by any means**, native or OCR, and every one of those carries
 `unknown` status by construction.
 
 Of the 28 documents that do carry a status claim, **12 are scans whose text came from OCR**, and
 **none rests on a page nobody could read**.
 
-**Three of the 148 are not results** and are marked `not-results` in `document_kind`: a
+**Three of the 382 are not results** and are marked `not-results` in `document_kind`: a
 redistricting notice, a daily ballots-cast tally sheet, and an early-voting totals sheet. They
 are here because the county published them. Turnout and correspondence are not results.
 
-**36 of 95 is what we have retrieved, not what Tennessee publishes.** A county absent from this
+**78 of 95 is what we have retrieved, not what Tennessee publishes.** A county absent from this
 repository is almost always one whose page we have not yet fetched.
 
 Built by [Out of Many. Us](https://outofmany.us).
