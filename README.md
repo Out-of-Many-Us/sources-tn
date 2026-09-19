@@ -1,12 +1,16 @@
 # sources-tn
 
-Original county election result documents from Tennessee, kept exactly as the counties published them, with original filenames preserved.
+Original county election result documents from Tennessee, kept exactly as published, with original filenames preserved.
 
-Tennessee's Secretary of State publishes statewide and federal results. County commission, school board, sheriff, trustee and the other county offices are published only by the ninety five county election commissions, in whatever form each county chose. This repository is those documents.
+**Two rows here came from local news outlets rather than from a county.** Hardeman County's results are from the *Hatchie Press*, and Lincoln County's from WAFF, a television station in Huntsville, Alabama. Neither county election commission published a results file we could find. A local report of the count is better than a gap, and it is not the same kind of record: nobody at the county made it, its figures were transcribed by a reporter, and it can be edited or taken down without the county deciding anything. **The `source_url` column names the outlet in both cases, and every other row in this repository points at a county.**
+
+**Bledsoe County is absent for a related reason.** It publishes no results file either, and the only account of its count we could find is a newspaper page that carries a third party's API credential. Republishing another organisation's credential into a public repository is not ours to do, so that page is archived and deliberately not published here.
+
+Tennessee's Secretary of State publishes statewide and federal results. County commission, school board, sheriff, trustee and the other county offices are published only by the ninety five county election commissions, in whatever form each county chose. This repository is those documents, together with the three news reports described above.
 
 ## What is here
 
-**382 documents from 78 of Tennessee's 95 counties, plus 4 feed captures from 4 more.** `manifest.csv` lists every one with its
+**396 documents from 80 of Tennessee's 95 counties, plus 4 feed captures from 4 more.** `manifest.csv` lists every one with its
 source URL, the date it was retrieved, and a SHA-256 you can check against the file.
 
 Files are organised by **election**, because that is what people come here looking for:
@@ -84,18 +88,18 @@ prevent. The `flags` column records what each filename said.
 
 This repository's value is that you can check it, so you should know what we could not read.
 
-**109 of the 382 documents are scans with no embedded text layer.** Of those, most were read by
-OCR. **11 of the 382 yield no text by any means**, native or OCR, and every one of those carries
+**121 of the 396 documents are scans with no embedded text layer.** Of those, most were read by
+OCR. **11 of the 396 yield no text by any means**, native or OCR, and every one of those carries
 `unknown` status by construction.
 
 Of the 28 documents that do carry a status claim, **12 are scans whose text came from OCR**, and
 **none rests on a page nobody could read**.
 
-**Three of the 382 are not results** and are marked `not-results` in `document_kind`: a
+**Three of the 396 are not results** and are marked `not-results` in `document_kind`: a
 redistricting notice, a daily ballots-cast tally sheet, and an early-voting totals sheet. They
 are here because the county published them. Turnout and correspondence are not results.
 
-**78 of 95 is what we have retrieved, not what Tennessee publishes.** A county absent from this
+**80 of 95 is what we have retrieved, not what Tennessee publishes.** A county absent from this
 repository is almost always one whose page we have not yet fetched.
 
 Built by [Out of Many. Us](https://outofmany.us).
